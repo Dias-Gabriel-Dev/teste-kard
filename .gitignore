@@ -1,0 +1,34 @@
+# Dependências
+node_modules
+
+# Build
+dist/
+
+# Ambiente
+.env
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# IDE
+.idea/
+.vscode/
+.agent/
+.specify/
+specs/
+sprints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testes
+coverage/
+
+
+/src/generated/prisma
