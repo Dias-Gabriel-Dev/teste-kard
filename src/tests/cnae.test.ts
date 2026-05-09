@@ -96,7 +96,7 @@ describe("CNAE Endpoints", () => {
     });
 
     it('deve respeitar paginação', async () => {
-      // Criar 3 registros
+      // Cria 3 registros
       for (let i = 0; i < 3; i++) {
         await request(app).post('/api/cnaes').send({
           ...validCnae,
