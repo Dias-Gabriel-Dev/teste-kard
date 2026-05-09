@@ -60,7 +60,7 @@ O servidor estará disponível em `http://localhost:3000`.
 - **Spec JSON**: <http://localhost:3000/api/docs/json>
 - **Health Check**: <http://localhost:3000/health>
 
-## ndpoints
+## Endpoints
 
 | Método | Rota              | Descrição                    |
 |--------|-------------------|------------------------------|
@@ -74,8 +74,9 @@ O servidor estará disponível em `http://localhost:3000`.
 
     npm test
 
-## Estrutura do Projeto
+## Estrutura da API
 
+```text
 src/
     ├── config/env.ts              # Validação de env vars
     ├── docs/swagger.ts            # Spec OpenAPI 3.0
@@ -93,6 +94,7 @@ src/
     │       └── validate.ts        # Middleware de validação
     ├── tests/
     │   ├── setup.ts               # Setup dos testes
-    │   └── cnaeTest.ts           # Testes de endpoints
+    │   └── cnae.test.ts           # Testes de endpoints
     ├── app.ts                     # Configuração Express
     └── server.ts                  # Bootstrap do servidor
+```
