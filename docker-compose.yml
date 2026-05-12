@@ -5,11 +5,11 @@ services:
     image: postgres:16-alpine
     container_name: kard-cnae-postgres
     environment:
-      POSTGRES_USER: kard
-      POSTGRES_PASSWORD: kard123
-      POSTGRES_DB: kard_cnae
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
     ports:
-      - '5432:5432'
+      - '${DB_PORT}:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
