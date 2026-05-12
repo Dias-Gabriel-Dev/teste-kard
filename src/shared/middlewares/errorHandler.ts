@@ -12,7 +12,7 @@ export function errorHandler(
   if (error instanceof ZodError) {
     res.status(400).json({
       status: "error",
-      message: "Error de validação",
+      message: "Erro de validação",
       errors: error.flatten().fieldErrors,
     });
     return;
@@ -31,6 +31,6 @@ export function errorHandler(
 
   res.status(500).json({
     status: "error",
-    message: "Error interno do servidor",
+    message: "Erro interno do servidor",
   });
 }
